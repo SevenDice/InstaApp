@@ -14,7 +14,7 @@ public class DemoAppContextListener implements ServletContextListener {
 
         String clientId = "bd93c391803345e8add91979526fd3c4" ;
         String clientSecret = "a87016ce661b47b6b690056f8770e906";
-        String callbackUrl = "https://sevendc.herokuapp.com/handleInstagramToken";
+        String callbackUrl = "https://sevendc.herokuapp.com/handleInstagramToken/";
 
 
         InstagramService service = new InstagramAuthService()
