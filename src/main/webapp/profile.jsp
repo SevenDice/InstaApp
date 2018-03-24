@@ -63,6 +63,12 @@
         <ul class="actions">
           <li><a href="logout.jsp" class="button">Logout</a></li>
         </ul>
+
+        <article class="6u 12u$(xsmall) work-item">
+          <a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+          <h3>Magna sed consequat tempus</h3>
+          <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+        </article>
       </section>
 
 

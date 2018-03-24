@@ -1,15 +1,15 @@
 <!-- Footer -->
-  <footer id="footer">
-    <div class="inner">
-      <ul class="icons">
-        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-      </ul>
+<footer id="footer">
+  <div class="inner">
+    <ul class="icons">
+      <li><a href="https://vk.com/kirillseven" class="icon fa-vk"><span class="label">VK</span></a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=100001856754894" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+      <li><a href="https://www.instagram.com/kirilldice/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    </ul>
       <ul class="copyright">
-        <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-      </ul>
+				<li>Gurin Kirill</li>
+				<li>2018 &copy;</li>
+			</ul>
     </div>
   </footer>
 
