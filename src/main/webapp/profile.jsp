@@ -41,7 +41,7 @@
   <div id="main">
 
     <!-- One -->
-      <section id="one">
+      <section id="two">
         <h2>Gallery</h2>
         <div class="row">
           <%
