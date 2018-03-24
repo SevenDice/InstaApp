@@ -51,7 +51,7 @@
               for (MediaFeedData mediaFeedData : mediaList) {
           %>
           <article class="6u 12u$(xsmall) work-item">
-            <a href="<%=mediaFeedData.getImages().getStandardResolution().getImageUrl()%>" class="image fit thumb"> <img src="<%=mediaFeedData.getImages().getThumbnail().getImageUrl()%>" alt="" /></a>
+            <a href="<%=mediaFeedData.getImages().getStandardResolution().getImageUrl()%>" class="image fit thumb"> <img src="<%=mediaFeedData.getImages().getStandardResolution().getImageUrl()%>" /></a>
           <!--  <h3>Magna sed consequat tempus</h3>
             <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>-->
           </article>
