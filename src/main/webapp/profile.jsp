@@ -1,11 +1,9 @@
 <jsp:include page="common/header.jsp"/>
 
-
 <%@ page import="com.sachinhandiekar.examples.Constants" %>
-
 <%@ page import="org.jinstagram.Instagram" %>
-<%@ page import="org.jinstagram.entity.users.feed.MediaFeedData" %
 <%@ page import="org.jinstagram.entity.users.basicinfo.UserInfoData" %>
+<%@ page import="org.jinstagram.entity.users.feed.MediaFeedData" %>
 <%@ page import="java.util.List" %>
 
 
