@@ -43,12 +43,12 @@
 
     <!-- One -->
       <section id="one">
-        <%
-            List<MediaFeedData> mediaList = instagram.getUserRecentMedia().getData();
-        %>
         <h2>Gallery</h2>
-        <h3>Media Count : <%=mediaList.size()%></h3>
         <div class="row">
+          <%
+              List<MediaFeedData> mediaList = instagram.getUserRecentMedia().getData();
+          %>
+          <h3>Media Count : <%=mediaList.size()%></h3>
           <%
               for (MediaFeedData mediaFeedData : mediaList) {
           %>
