@@ -4,8 +4,9 @@
 <%@ page import="com.sachinhandiekar.examples.Constants" %>
 
 <%@ page import="org.jinstagram.Instagram" %>
-
+<%@ page import="org.jinstagram.entity.users.feed.MediaFeedData" %
 <%@ page import="org.jinstagram.entity.users.basicinfo.UserInfoData" %>
+<%@ page import="java.util.List" %>
 
 
 <%
