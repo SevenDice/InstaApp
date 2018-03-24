@@ -23,72 +23,147 @@
 %>
 
 
-<!-- Navigation -->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">jInstagram</a>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="profile.jsp">Profile</a></li>
-                <li><a href="gallery.jsp">Gallery</a></li>
-                <li><a href="search.jsp">Search</a></li>
-                <li><a href="logout.jsp">Logout</a></li>
+<!-- Header -->
+  <header id="header">
+    <div class="inner">
+      <a href="#" class="image avatar"><img src="<%= userInfoData.getProfilePicture() %>" alt="" /></a>
+      <h1><strong>Username: </strong><%=userInfoData.getUsername()%><br />
+          <strong>Full Name:</strong><%=userInfoData.getFullName()%<br />
+          <strong>Bio:</strong><%=userInfoData.getBio()%><br />
+          <strong>Website:</strong><%=userInfoData.getWebsite()%><br />
+          <strong>Follows:</strong><%=userInfoData.getCounts().getFollows()%><br />
+          <strong>Followed By:</strong><%=userInfoData.getCounts().getFollowedBy()%><br />
+          <strong>Media Count:</strong><%=userInfoData.getCounts().getMedia()%><br /></h1>
+    </div>
+  </header>
 
+<!-- Main -->
+  <div id="main">
+
+    <!-- One -->
+      <section id="one">
+        <header class="major">
+          <h2>Ipsum lorem dolor aliquam ante commodo<br />
+          magna sed accumsan arcu neque.</h2>
+        </header>
+        <p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+        <ul class="actions">
+          <li><a href="#" class="button">Learn More</a></li>
+        </ul>
+      </section>
+
+    <!-- Two -->
+      <section id="two">
+        <h2>Recent Work</h2>
+        <div class="row">
+          <article class="6u 12u$(xsmall) work-item">
+            <a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
+            <h3>Magna sed consequat tempus</h3>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+          <article class="6u$ 12u$(xsmall) work-item">
+            <a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+            <h3>Ultricies lacinia interdum</h3>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+          <article class="6u 12u$(xsmall) work-item">
+            <a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
+            <h3>Tortor metus commodo</h3>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+          <article class="6u$ 12u$(xsmall) work-item">
+            <a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
+            <h3>Quam neque phasellus</h3>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+          <article class="6u 12u$(xsmall) work-item">
+            <a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
+            <h3>Nunc enim commodo aliquet</h3>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+          <article class="6u$ 12u$(xsmall) work-item">
+            <a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
+            <h3>Risus ornare lacinia</h3>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+        </div>
+        <ul class="actions">
+          <li><a href="#" class="button">Full Portfolio</a></li>
+        </ul>
+      </section>
+
+    <!-- Three -->
+      <section id="three">
+        <h2>Get In Touch</h2>
+        <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+        <div class="row">
+          <div class="8u 12u$(small)">
+            <form method="post" action="#">
+              <div class="row uniform 50%">
+                <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                <div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+              </div>
+            </form>
+            <ul class="actions">
+              <li><input type="submit" value="Send Message" /></li>
             </ul>
+          </div>
+          <div class="4u$ 12u$(small)">
+            <ul class="labeled-icons">
+              <li>
+                <h3 class="icon fa-home"><span class="label">Address</span></h3>
+                1234 Somewhere Rd.<br />
+                Nashville, TN 00000<br />
+                United States
+              </li>
+              <li>
+                <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+                000-000-0000
+              </li>
+              <li>
+                <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+                <a href="#">hello@untitled.tld</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <!-- /.container -->
-</nav>
+      </section>
 
-<!-- Page Content -->
-<div class="container">
-
-    <div class="row">
-
-        <div class="col-lg-12">
-            <h1 class="page-header">User Profile</h1>
-        </div>
-        <% UserInfoData userInfoData = instagram.getCurrentUserInfo().getData();         %>
-        <p class="lead">
-
-            <img src="<%= userInfoData.getProfilePicture() %>"/> <br/>
-
-        <p>Username : <%=userInfoData.getUsername()%>
-        </p>
-
-        <p>Full Name : <%=userInfoData.getFullName()%>
-        </p>
-
-        <p>Bio : <%=userInfoData.getBio()%>
-        </p>
-
-        <p>Website : <%=userInfoData.getWebsite()%>
-        </p>
-
-        <p>Follows : <%=userInfoData.getCounts().getFollows()%>
-        </p>
-
-        <p>Followed By : <%=userInfoData.getCounts().getFollowedBy()%>
-        </p>
-
-        <p>Media Count : <%=userInfoData.getCounts().getMedia()%>
-        </p>
-        </p>
-
-
-    </div>
-
-    <hr>
-
-
-<jsp:include page="common/footer.jsp"/>
+      <!-- Three -->
+        <section id="three">
+          <h2>Get In Touch</h2>
+          <p>Accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque lorem ipsum dolor.</p>
+          <div class="row">
+            <div class="8u 12u$(small)">
+              <form method="post" action="#">
+                <div class="row uniform 50%">
+                  <div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+                  <div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+                  <div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                </div>
+              </form>
+              <ul class="actions">
+                <li><input type="submit" value="Send Message" /></li>
+              </ul>
+            </div>
+            <div class="4u$ 12u$(small)">
+              <ul class="labeled-icons">
+                <li>
+                  <h3 class="icon fa-home"><span class="label">Address</span></h3>
+                  1234 Somewhere Rd.<br />
+                  Nashville, TN 00000<br />
+                  United States
+                </li>
+                <li>
+                  <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
+                  000-000-0000
+                </li>
+                <li>
+                  <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
+                  <a href="#">hello@untitled.tld</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>

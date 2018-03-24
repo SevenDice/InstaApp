@@ -1,21 +1,25 @@
 <!-- Footer -->
-<footer>
-    <div class="row">
-        <div class="col-lg-12">
-            <p>Developed by <a href="http://sachinhandiekar.com">Sachin Handiekar</a></p>
-        </div>
+  <footer id="footer">
+    <div class="inner">
+      <ul class="icons">
+        <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+        <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+        <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+      </ul>
+      <ul class="copyright">
+        <li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+      </ul>
     </div>
-</footer>
+  </footer>
 
-</div>
-<!-- /.container -->
-
-<!-- jQuery Version 1.11.0 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.poptrox.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
