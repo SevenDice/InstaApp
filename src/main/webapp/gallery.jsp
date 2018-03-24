@@ -11,7 +11,6 @@
 <%
 
     Object objInstagram = session.getAttribute(Constants.INSTAGRAM_OBJECT);
-
     Instagram instagram = null;
 
     if (objInstagram != null) {
