@@ -29,12 +29,12 @@
       <% UserInfoData userInfoData = instagram.getCurrentUserInfo().getData();         %>
       <a href="#" class="image avatar"><img src="<%= userInfoData.getProfilePicture() %>" alt="" /></a>
       <h1><strong>Username: </strong><%= userInfoData.getUsername() %><br />
-          <strong>Full Name:</strong><%= userInfoData.getFullName() %><br />
-          <strong>Bio:</strong><%= userInfoData.getBio() %><br />
-          <strong>Website:</strong><%= userInfoData.getWebsite() %><br />
-          <strong>Follows:</strong><%= userInfoData.getCounts().getFollows() %><br />
-          <strong>Followed By:</strong><%= userInfoData.getCounts().getFollowedBy() %><br />
-          <strong>Media Count:</strong><%= userInfoData.getCounts().getMedia() %><br /></h1>
+          <strong>Full Name: </strong><%= userInfoData.getFullName() %><br />
+          <strong>Bio: </strong><%= userInfoData.getBio() %><br />
+          <strong>Website: </strong><%= userInfoData.getWebsite() %><br />
+          <strong>Follows: </strong><%= userInfoData.getCounts().getFollows() %><br />
+          <strong>Followed By: </strong><%= userInfoData.getCounts().getFollowedBy() %><br />
+          <strong>Media Count: </strong><%= userInfoData.getCounts().getMedia() %><br /></h1>
     </div>
   </header>
 
@@ -168,3 +168,5 @@
             </div>
           </div>
         </section>
+
+<jsp:include page="common/footer.jsp"/>
