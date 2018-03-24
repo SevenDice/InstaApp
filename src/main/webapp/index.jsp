@@ -16,15 +16,22 @@
     String authorizationUrl = service.getAuthorizationUrl();
 
 %>
+<section id="one">
+  <header class="major">
+    <h1>Welcome To Instagram Profiler</h1>
+  </header>
+  <p>A basic web application demonstrating the use of Official Instagram API.</p>
+  <p><strong>Instagram Profiler</strong> displaying information and media feed of your Instagram profile.</p>
+  <p><a href="<%= authorizationUrl%>"><img src="images/login_button.png"/></a></p>
+</section>
 
-<div class="container">
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
 
-    <div class="jumbotron">
-        <h1>Demo</h1>
-        <p class="lead">A basic web application demonstrating the use of <a href="https://github.com/sachin-handiekar/jInstagram">jInstagram API</a></p>
-        <p><a href="<%= authorizationUrl%>"><img src="images/Instagram_normal.png"/></a>
-        </p>
-    </div>
-
-
-<jsp:include page="common/footer.jsp" />
+    </body>
+    </html>
