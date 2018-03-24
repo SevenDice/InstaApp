@@ -1,4 +1,15 @@
-<jsp:include page="common/header.jsp" />
+<html>
+	<head>
+		<title>Identity by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main_login.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript_login.css" /></noscript>
+	</head>
+	<body class="is-loading">
 
 <%@ page import="org.jinstagram.auth.oauth.InstagramService" %>
 <%@ page import="com.sachinhandiekar.examples.Constants" %>
@@ -16,22 +27,40 @@
     String authorizationUrl = service.getAuthorizationUrl();
 
 %>
-<section id="one">
-  <header class="major">
-    <h1>Welcome To Instagram Profiler</h1>
-  </header>
-  <p>A basic web application demonstrating the use of Official Instagram API.</p>
-  <p><strong>Instagram Profiler</strong> displaying information and media feed of your Instagram profile.</p>
-  <p><a href="<%= authorizationUrl%>"><img src="images/login_button.png"/></a></p>
-</section>
+<!-- Wrapper -->
+  <div id="wrapper">
 
-    <!-- Scripts -->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/jquery.poptrox.min.js"></script>
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/util.js"></script>
-      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-      <script src="assets/js/main.js"></script>
+    <!-- Main -->
+      <section id="main">
+        <header>
+          <span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
+          <h1>Instagram Profiler</h1>
+          <p>Sign in with Instagram</p>
+        </header>
 
-    </body>
-    </html>
+        <footer>
+          <ul class="icons">
+            <li><a href="<%= authorizationUrl%>" class="fa-instagram">Instagram</a></li>
+          </ul>
+        </footer>
+      </section>
+
+    <!-- Footer -->
+      <footer id="footer">
+        <ul class="copyright">
+
+        </ul>
+      </footer>
+  </div>
+
+<!-- Scripts -->
+  <!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
+  <script>
+    if ('addEventListener' in window) {
+      window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+      document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    }
+  </script>
+
+</body>
+</html>
